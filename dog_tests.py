@@ -35,31 +35,31 @@ class DogValidationTests(unittest.TestCase):
 
 	# Define tests for the Dog instance validity check functions
 	def test_validate_name(self):
-		for dog in good_dogs:
+		for dog in self.good_dogs:
 			self.assertTrue(rd.validate_name(dog))
 
-		for dog in bad_dogs:
+		for dog in self.bad_dogs:
 			self.assertFalse(rd.validate_name(dog))
 
 	def test_validate_breed(self):
-		for dog in good_dogs:
+		for dog in self.good_dogs:
 			self.assertTrue(rd.validate_breed(dog))
 
-		for dog in bad_dogs:
+		for dog in self.bad_dogs:
 			self.assertFalse(rd.validate_breed(dog))
 
 	def test_validate_color(self):
-		for dog in good_dogs:
+		for dog in self.good_dogs:
 			self.assertTrue(rd.validate_color(dog))
 
-		for dog in bad_dogs:
+		for dog in self.bad_dogs:
 			self.assertFalse(rd.validate_color(dog))
 
 	def test_validate_age(self):
-		for dog in good_dogs:
+		for dog in self.good_dogs:
 			self.assertTrue(rd.validate_age(dog))
 
-		for dog in bad_dogs:
+		for dog in self.bad_dogs:
 			self.assertFalse(rd.validate_age(dog))
 
 
