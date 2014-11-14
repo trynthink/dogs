@@ -13,7 +13,7 @@ class DogClassTest(unittest.TestCase):
     """ Tests whether the dog class is working """
 
     def test_dogs(self):
-        a_dog = rd.Dog("Randy", "Golden Retriever", "Yellow", 4)
+        a_dog = rd.Dog("Randy", "Golden Retriever", "Cream", 4)
         self.assertTrue(a_dog)
 
 
@@ -107,7 +107,6 @@ class CheckDogColorTests(unittest.TestCase):
         """ Check that a dict fails """
         self.assertRaises(rd.NotStringError, rd.check_dog_color, self.str_dict)
    
-
 
 
 class CheckDogAgeTests(unittest.TestCase):
