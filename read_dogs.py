@@ -13,6 +13,8 @@ class Dog:
         self.color = color
         self.age = age
 
+# WHEN IMPORTING, WHAT ABOUT ERRORS FROM INCOMPLETE OBJECTS (ENTRIES)?
+
 # def dog_unserialize(q):
 #     # strip off name with pop
 #     # name = q.pop('Name') # no default given, will throw KeyError if no name is provided in the object definition
