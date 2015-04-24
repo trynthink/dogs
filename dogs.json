@@ -1,0 +1,26 @@
+[
+{
+	"Name": "Max",
+	"Breed": "Poodle",
+	"Color": "White",
+	"Age": 8
+},
+{
+	"Name": "Jack",
+	"Breed": "Corgi",
+	"Color": "Black",
+	"Age": 4
+},
+{
+	"Name": "Lucy",
+	"Breed": "Labrador Retriever",
+	"Color": "Brown",
+	"Age": 2
+},
+{
+	"Name": "Bear",
+	"Breed": "German Shepherd",
+	"Color": "Brown",
+	"Age": 6
+}
+]
