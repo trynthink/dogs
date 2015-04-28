@@ -1,13 +1,13 @@
 [
 {
 	"Name": "Max",
-	"Breed": "Poodle",
+	"Breed": "Standard Poodle",
 	"Color": "White",
 	"Age": 8
 },
 {
 	"Name": "Jack",
-	"Breed": "Corgi",
+	"Breed": "Welsh Corgi",
 	"Color": "Black",
 	"Age": 4
 },
@@ -22,5 +22,17 @@
 	"Breed": "German Shepherd",
 	"Color": "Brown",
 	"Age": 6
+},
+{
+	"Name": "Lady",
+	"Breed": "Bichon Frise",
+	"Color": "White",
+	"Age": 3
+},
+{
+	"Name": "Hiro",
+	"Breed": "Akita Inu",
+	"Color": "Brindle",
+	"Age": 5
 }
 ]
