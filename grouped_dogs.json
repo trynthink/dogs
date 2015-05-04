@@ -2,7 +2,7 @@
 {
 	"German Shepherd": {
 		"Washington": {
-			"Age": 8
+			"Age": 6
 		},
 		"Oregon": {
 			"Age": 3
@@ -35,7 +35,7 @@
 	},
 	"Akita Inu": {
 		"Washington": {
-			"Age": 8
+			"Age": 7
 		},
 		"Oregon": {
 			"Age": 10
