@@ -1,0 +1,48 @@
+[
+{
+	"German Shepherd": {
+		"Washington": {
+			"Age": 8
+		},
+		"Oregon": {
+			"Age": 3
+		},
+		"California": {
+			"Age": 4
+		}
+	},
+	"Standard Poodle": {
+		"Washington": {
+			"Age": 5
+		},
+		"Oregon": {
+			"Age": 7
+		},
+		"California": {
+			"Age": 12
+		}
+	},
+	"Welsh Corgi": {
+		"Washington": {
+			"Age": 11
+		},
+		"Oregon": {
+			"Age": 5
+		},
+		"California": {
+			"Age": 6
+		}
+	},
+	"Akita Inu": {
+		"Washington": {
+			"Age": 8
+		},
+		"Oregon": {
+			"Age": 10
+		},
+		"California": {
+			"Age": 9
+		}
+	}
+}
+]
