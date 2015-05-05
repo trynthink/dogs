@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>dogs with JSON</title>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<!-- nothing else can come before this point in <head> -->
+
+		<title>jQuery and JSON</title>
+		<!-- jQuery -->
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+		
+		<!-- Bootstrap CSS/JavaScript -->
+		<link rel='stylesheet' type='text/css' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+		<script type='text/javascript' src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+
+		<!-- CSS/JavaScript -->
 		<script type='text/javascript' src='script.js'></script>
+		<style type='text/css'>
+		#place {
+			margin-top: 15px;
+		}
+		</style>
 	</head>
 	<body>
-	<h3 id='top'>A list of dogs</h3>
-	<div id='loc'></div>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-md-8'>
+					<h3>jQuery form report test</h3>
+					<div class='btn-group' data-toggle='buttons' id='dog_breed'>
+						<label class='btn btn-primary'><input type='radio' name='options' value='German Shepherd' autocomplete='off'>German Shepherd</label>
+						<label class='btn btn-primary'><input type='radio' name='options' value='Standard Poodle' autocomplete='off'>Standard Poodle</label>
+						<label class='btn btn-primary'><input type='radio' name='options' value='Welsh Corgi' autocomplete='off'>Welsh Corgi</label>
+						<label class='btn btn-primary'><input type='radio' name='options' value='Akita Inu' autocomplete='off'>Akita Inu</label>
+					</div> <!-- /buttons -->
+				</div> <!-- /col-md-8 -->
+				<div class='col-md-4' id='bg'>
+					<h3 id='number'></h3>
+					<button class='btn btn-info' type='button' id='update'>Refresh</button>
+				</div> <!-- /col-md-4 -->
+			</div> <!-- /row -->
+
+			<div class='row' id='place'>
+				<div class='col-md-6'>
+					<select multiple class='form-control' id='US_states'>
+					  <option value='Washington'>Washington</option>
+					  <option value='Oregon'>Oregon</option>
+					  <option value='California'>California</option>
+					</select>
+					</div> <!-- /col-md-8 -->
+			</div> <!-- /row -->
+		</div> <!-- /container -->
 	</body>
 </html>
