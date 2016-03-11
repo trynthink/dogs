@@ -22,5 +22,11 @@
 	"Breed": "German Shepherd",
 	"Color": "Brown",
 	"Age": 6
+},
+{
+	"Name": "Mitzi",
+	"Breed": "Akita",
+	"Color": "Sable",
+	"Age": 8
 }
 ]
