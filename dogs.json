@@ -34,5 +34,11 @@
 	"Breed": "Akita Inu",
 	"Color": "Brindle",
 	"Age": 5
+},
+{
+	"Name": "Mitzi",
+	"Breed": "Akita",
+	"Color": "Sable",
+	"Age": 8
 }
 ]
