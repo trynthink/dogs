@@ -5,7 +5,8 @@
 # Import needed packages
 import unittest
 import sys
-sys.path.insert(1, '/Users/chioke/Documents/+projects/dogs')
+# sys.path.insert(1, '/Users/chioke/Documents/+projects/dogs')
+sys.path.insert(1, '../')
 import read_dogs as rd
 
 # Need to know what I am testing: a class, function...
