@@ -4,9 +4,12 @@
 
 # Import needed packages
 import unittest
+import sys
+sys.path.insert(1, '/Users/chioke/Documents/+projects/dogs')
 import read_dogs as rd
 
 # Need to know what I am testing: a class, function...
+
 
 # Create test subclass(es) of unittest.TestCase ("test fixtures")
 class DogClassTest(unittest.TestCase):
@@ -15,7 +18,6 @@ class DogClassTest(unittest.TestCase):
     def test_dogs(self):
         a_dog = rd.Dog("Randy", "Golden Retriever", "Cream", 4)
         self.assertTrue(a_dog)
-
 
 
 class CheckDogNameTests(unittest.TestCase):
@@ -44,7 +46,6 @@ class CheckDogNameTests(unittest.TestCase):
         self.assertRaises(rd.NotStringError, rd.check_dog_name, self.str_dict)
 
 
-
 class CheckDogBreedTests(unittest.TestCase):
     """ Tests validity checking of breeds for Dog instances """
 
@@ -69,7 +70,6 @@ class CheckDogBreedTests(unittest.TestCase):
     def test_dog_breed_is_not_a_dict(self):
         """ Check that a dict with dog breeds fails """
         self.assertRaises(rd.NotStringError, rd.check_dog_breed, self.str_dict)
-
 
 
 class CheckDogColorTests(unittest.TestCase):
@@ -106,7 +106,6 @@ class CheckDogColorTests(unittest.TestCase):
     def test_dog_name_is_not_a_dict(self):
         """ Check that a dict fails """
         self.assertRaises(rd.NotStringError, rd.check_dog_color, self.str_dict)
-   
 
 
 class CheckDogAgeTests(unittest.TestCase):
@@ -134,29 +133,11 @@ class CheckDogAgeTests(unittest.TestCase):
         self.assertRaises(rd.InvalidAgeError, rd.check_dog_age, 0)
 
 
-
 # Offer external code execution (include all lines below this point in all test files)
 def main():
     # Triggers default behavior of running all test fixtures in the file
     unittest.main()
 
+
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
