@@ -11,11 +11,9 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2  # Do I need this line?
       - name: Install Node dependencies  # CHECK - ok to not specify version?
-        run: |
-          npm install -g grunt-cli
-          npm install
-      # - name: Check for valid JSON
-      #   run: grunt travis -v  # CHECK - is this syntax right?
+        run: npm install
+      - name: Check for valid JSON
+        run: grunt jsonreview -v
       
       - name: Set up Python
         uses: actions/setup-python@v2  # Do I need this line?

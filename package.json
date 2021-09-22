@@ -1,0 +1,10 @@
+{
+  "name": "jsonreview",
+  "license": "Apache 2.0",
+  "description": "Grunt configuration to use with GitHub Actions for JSON validation",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-jsonlint": "^1.1.0",
+    "matchdep": "^1.0.1"
+  }
+}
