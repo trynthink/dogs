@@ -50,8 +50,7 @@ jobs:
           pip install numpy>=1.16 scipy requests numpy-financial
       # Run tests
       - name: Run tests
-        # run: python -m unittest discover -p '_test/*.py'
-        run: python _test/dog_tests.py
+        run: python -m unittest discover -p '*_tests.py'
 
 
 
