@@ -1,4 +1,4 @@
-name: dogs-tests
+name: name-experiment  # Trying using a different name from the YAML file name to see what effect that has
 on: [push]
 jobs:
 
