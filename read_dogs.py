@@ -37,13 +37,13 @@ class InvalidColorError(DogError): pass
 # Define Dog object validation functions
 def check_dog_name(dog):
     """ Check that an acceptable name is given to a dog """
-    if not isinstance(dog["Name"], str):
+    if not isinstance(dog.name, str):
         raise NotStringError("Dog name entered is not a string")
 
 
 def check_dog_breed(dog):
     """ Check that an acceptable breed is given for a dog """
-    if not isinstance(dog["Breed"], str):
+    if not isinstance(dog.breed, str):
         raise NotStringError("Dog breed entered is not a string")
 
 
@@ -51,9 +51,11 @@ def check_dog_color(dog):
     """ Check that an acceptable color is provided for a dog """
     colors = ["White", "Black", "Brown", "Sable", "Gray", "Fawn", "Cream"]
 
-    if not isinstance(dog["Color"], str):
-        for color in dog["Color"]:
-            pass  # STOPPED HERE
+    if isinstance(dog.color, str):
+        if dog.color not in colors:
+            raise InvalidColorError("Dog color is not in the accepted list of colors")
+    else:
+        raise NotStringError("Dog color entered is not a string")
 
 
 def check_dog_age(dog):
@@ -70,7 +72,7 @@ def check_dog_age(dog):
 
 
 if __name__ == '__main__':
-    main()
+    pass
 
 #####################
 
